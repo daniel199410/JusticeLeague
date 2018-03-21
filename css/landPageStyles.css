@@ -14,7 +14,11 @@
 }
 
 .hero-container header{
-    padding: 0 16px;
+    padding: 16px 16px;
+}
+
+.hero-container header h2{
+    margin: 0;
 }
 
 .hero-text{
@@ -37,4 +41,30 @@
 
 .main-title{
     text-align: center;
+}
+
+@media only screen and (max-width: 780px) {
+    .heroes-container{
+        margin: 0;
+        width: 100%;
+    }
+
+    .hero-container{
+        float: none;
+        width: 90%;
+        margin: auto;
+    }
+
+    .hero-container header{
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hero-container{
+        float: none;
+        width: 100%;
+        margin-bottom: 4px;
+    }
 }
