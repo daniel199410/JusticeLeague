@@ -1,0 +1,40 @@
+.heroes-container{
+    margin: 0 10%;
+}
+
+.hero-container{
+    border-radius: 2pt;
+    float: left;
+    margin: 8px 3% 8px 0;
+    padding-bottom: 20px;
+    width: 47%;
+    -webkit-box-shadow: 1px 2px 8px 0px rgba(117,117,117,1);
+    -moz-box-shadow: 1px 2px 8px 0px rgba(117,117,117,1);
+    box-shadow: 1px 2px 8px 0px rgba(117,117,117,1);
+}
+
+.hero-container header{
+    padding: 0 16px;
+}
+
+.hero-text{
+    padding: 0 16px;
+}
+
+.hero-text a{
+    color: #616161;
+}
+
+.hero-text a:hover{
+    color: #424242;
+}
+
+.image-wrapper{
+    margin: 0;
+    max-height: 250px;
+    overflow: hidden;
+}
+
+.main-title{
+    text-align: center;
+}
