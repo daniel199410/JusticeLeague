@@ -39,10 +39,30 @@ body{
     width: 100%;
 }
 
+.footer{
+	background-color: #FAFAFA;
+	font-size: 0.9em;
+	margin-top: 24px;
+	padding: 16px;
+	text-align: center;
+}
+
+.footer a:hover{
+	font-weight: bold;
+}
+
+.footer a{
+	color: #616161;
+}
+
 .main{
     position: relative;
     top: 90px;
     z-index: 1;
+}
+
+.main-title{
+    text-align: center;
 }
 
 .nav{
@@ -52,6 +72,7 @@ body{
     -webkit-box-shadow: 1px 2px 8px 0px rgba(117,117,117,1);
     -moz-box-shadow: 1px 2px 8px 0px rgba(117,117,117,1);
     box-shadow: 1px 2px 8px 0px rgba(117,117,117,1);
+	top: 0;
     z-index: 10;
 }
 

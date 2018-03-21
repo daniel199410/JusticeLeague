@@ -33,14 +33,14 @@
     color: #424242;
 }
 
+.hero-text p{
+	min-height: 60px;
+}
+
 .image-wrapper{
     margin: 0;
     max-height: 250px;
     overflow: hidden;
-}
-
-.main-title{
-    text-align: center;
 }
 
 @media only screen and (max-width: 780px) {
