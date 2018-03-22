@@ -1,0 +1,17 @@
+a:hover{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.credits ul{
+    list-style: none;
+}
+
+.credits ul a{
+    margin-left: 1%;
+}
+
+.mapa{
+    width: 70%;
+    margin: auto;
+}
