@@ -1,0 +1,37 @@
+a:hover{
+    font-weight: bold;
+}
+
+.main-data{
+    width: 59%;
+}
+
+.profile aside {
+    float: left;
+    padding: 16px;
+    border-radius: 2pt;
+    margin: 16px;
+    -webkit-box-shadow: 1px 2px 8px 0px rgba(117,117,117,1);
+    -moz-box-shadow: 1px 2px 8px 0px rgba(117,117,117,1);
+    box-shadow: 1px 2px 8px 0px rgba(117,117,117,1);
+}
+
+.profile aside h3{
+    text-align: center;
+    margin-top: 0;
+}
+
+.profile aside ul{
+    margin-bottom: 0;
+}
+
+.profile aside ul, .skills ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+@media only screen and (max-width: 780px) {
+	.main-data{
+		width: 80%;
+	}	
+}
