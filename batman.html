@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+	<!--La descripción detallada de las páginas de los héroes solo se realiza en esta página 
+	dado que las páginas de los otros héroes tienen la misma estructura, con diferente contenido 
+	(imágenes, texto)-->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/characterPageStyles.css">
+		<link rel="stylesheet" href="css/characterPageStyles.css">
+		<link rel="stylesheet" href="css/superman.css">
 		<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+		<!-- Ícono -->
 		<link rel="icon" type="Images/x-icon" href="Images/batmanIcon.jpg">
         <title>Liga de la justicia: Batman</title>
     </head>
     <body>
+		<!-- Barra de navegación -->
         <nav class="nav">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+				<li><a href="index.html">Inicio</a></li>
+				<!-- se aplica el estilo de la clase active (texto en negrita) a la página actual -->
                 <li class="active"><a href="batman.html">Batman</a></li>
                 <li><a href="superman.html">Superman</a></li>
                 <li><a href="mujermaravilla.html">Mujer maravilla</a></li>
@@ -27,12 +34,15 @@
         </nav>
 		<main class="main">
 			<section class="profile">
+				<!--Contenedor del logo de cada personaje-->
 				<figure class="profile-image">
 					<img src="Images/batmanLogo.png" width="100%">
 				</figure>
 				<article class="main-data">
+					<!-- En este contenedor se presentan las características principales de cada héroe-->
 					<h1>Batman</h1>
 					<div class="item-description">
+						<!--Un contenedor por cada item de la información-->
 						<p><strong>Alias:</strong></p>
 						<p>El caballero de la noche, El caballero oscuro</p>
 					</div>
@@ -54,9 +64,12 @@
 						</ul>
 					</div>
 				</article>
+				<!--Tabla de contenido-->
 				<aside>
 					<h3>Contenido</h3>
 					<ul>
+						<!--Referencia a las etiquetas con los id's respetivos # para cada sección de 
+						la página-->
 						<li><a href="#description">Descripción</a></li>
 						<li><a href="#habilities">Poderes y habilidades</a></li>
 						<li><a href="#gallery">Galería</a></li>
@@ -64,6 +77,8 @@
 				</aside>
 				<div class="clear"></div>
 				<section class="character-info">
+					<!--Párrafos con información mas detallada del héroe, cada sección nueva inicia con un 
+					header 2-->
 					<p id="description">
 						Batman (conocido inicialmente como The Bat-Man) es un personaje creado por los estadounidenses Bob Kane y Bill Finger,​ y 
 						propiedad de DC Comics. Apareció por primera vez en la historia titulada «El caso del sindicato químico» de la revista Detective Comics 
@@ -181,9 +196,14 @@
 						subterráneas del ferrocarril. Aun cuando algunos héroes y villanos han tenido la 
 						oportunidad de verla, casi ninguno de ellos sabe dónde se encuentra exactamente.
 					</p>
+					<!--Vínculo para acceder a un recuro fuera de la página-->
 					<a href="https://es.wikipedia.org/wiki/Batman">Leer más...</a>
 				</section>
 			</section>
+			<!--La galería contiene tres imágenes del personaje, para pantallas mayores a 480px las imágenes
+				se presentan en línea, para pantallas menores o iguales a 480px, estas s presentan una debajo
+				de la otra
+			-->
 			<section class="gallery-container">
 				<h2>Galería</h2>
 				<section class = "gallery">
@@ -192,6 +212,8 @@
 					<figure><img src="Images/batman3.jpg" width="100%"></figure>
 				</section>
 			</section>
+			<!--Contenedor del botón flotante que permite ir al inicio de la página, este botón está presente
+				en todas las páginas-->
 			<div class="floating-button">
                 <a href=""><img src="Images/ic_keyboard_arrow_up_black_24dp_2x.png" width="56" alt="Ir arriba"></a>
             </div>

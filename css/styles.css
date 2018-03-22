@@ -1,13 +1,17 @@
+/*En esta hoja se definen los estilos comunes a todas las página*/
 a{
     text-decoration: none;
     color: black;
 }
 
 body{
+    /*Se agrega la fuente*/
     font-family: 'Berkshire Swash', cursive;
 }
 
 .floating-button a{
+    /*Estilos para el botón flotante, se utiliza una posición fija para que este se mantenga en la esquina
+    inferior derecha, también se le agrega una sombra por medio de box-shadow*/
     display: block;
     width: 56px;
     background-color: #F5F5F5;
@@ -22,10 +26,13 @@ body{
 }
 
 .floating-button a:hover{
+    /*Cuando el usuario ponga el mouse sobre el botón flotante, este se ocurece un poco*/
     background-color: #E0E0E0;
 }
 
 .active{
+    /*Cuando el usuario pone el mouse sobre un link de navegación, este link umenta de tamaño y se pone en
+    negrita*/
     font-weight: bold;
     font-size: 1.1em;
 }
@@ -35,12 +42,15 @@ body{
 }
 
 .divisor{
+    /*Una línea de 1 pixel para dividir segmentos de la página*/
     height: 1px;
     background-color: #9E9E9E;
     width: 100%;
 }
 
 .footer{
+    /*Estilos para el footer, se alinea el texto al centro y se agregan paddings y márgenes para
+    que el contenedor quede con "aire"*/
 	background-color: #FAFAFA;
 	font-size: 0.9em;
 	margin-top: 24px;
@@ -57,6 +67,9 @@ body{
 }
 
 .main{
+    /*Se baja la posición del contenedor principal, con el fin de que la barra de navegación no tape
+    la parte inicial del contenedor, se le asigna un z-index de 1, para que al hacer scroll el contenedor 
+    quede debajo de la barra de navegación*/
     position: relative;
     top: 90px;
     z-index: 1;
@@ -67,6 +80,7 @@ body{
 }
 
 .nav{
+    /*Estilos para labarra de navegación, se le agrega una sombra en el borde inferior del contenedor*/
     background-color: white;
     position: fixed;
     width: 100%;
@@ -89,13 +103,17 @@ body{
 }
 
 .nav ul li a:hover{
+    /*Cuando el usuario pone el click sobre un vínculo de navegación, el texto de ese vínculo se pone en
+    negrita*/
     font-weight: bold;
 }
 
 a:visited{
+    /*Evita que cuando el usuario haga click sobre un link, tome el color morado al haber sido visitado*/
     color: black;
 }
 
+/*Pantallas con una pantalla menor o igual a 480px*/
 @media only screen and (max-width: 480px) {
     .floating-button a{
         top: 82%;
@@ -107,16 +125,19 @@ a:visited{
     }
 
     .nav{
+        /*Se elimina la posición fija*/
         position: absolute;
         padding-top: 4px;
     }
 
     .nav ul{
+        /*Se clapsa la barra de navegación*/
         flex-flow: column;
         margin: 0;
     }
 
     .nav ul li a{
+        /*El texto de la barra de navegación se alinea hacia el centro*/      
         display: block;
         text-align: center;
         padding: 4px 0;

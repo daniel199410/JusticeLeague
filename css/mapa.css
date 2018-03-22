@@ -1,12 +1,15 @@
+/*En esta hoja se especifican los estilos para la página del mapa del sitio*/
 a:hover{
     font-size: 1.1em;
     font-weight: bold;
 }
 
+/*Se eliminan las viñetas*/
 .credits ul{
     list-style: none;
 }
 
+/*Se separa el link un poco del nombre*/
 .credits ul a{
     margin-left: 1%;
 }
@@ -16,6 +19,8 @@ a:hover{
     margin: auto;
 }
 
+/*El contenedor ocupa el 80% y el 90% de la pantalla para pantallas menores a 780px y menores a 480px
+respecctivamente*/
 @media only screen and (max-width: 780px) {
 	.mapa{
 		width: 80%;

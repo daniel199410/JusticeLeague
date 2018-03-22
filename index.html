@@ -13,6 +13,7 @@
     </head>
     <body>
         <nav class="nav">
+        <!-- Barra de navegación, es la misma para todas las páginas -->
             <ul>
                 <li class="active"><a href="index.html">Inicio</a></li>
                 <li><a href="batman.html">Batman</a></li>
@@ -30,6 +31,8 @@
                 <h1 class="main-title">Liga de la justicia: Hérores</h1>
             </header>
             <section class="heroes-container">
+                <!--Un article para cada superhéroe, se disponen dos columnas para pantallas mayores a 780px
+                    y 1 columna para cantallas menores o iguales a 780px-->
                 <article class="hero-container">
                     <header><h2>Batman</h2></header>
                     <figure class="image-wrapper">
@@ -62,6 +65,10 @@
                     </article>
                 </article>
                 <article class="hero-container">
+                    <!--Se divide el artículo en una sección para el título, otra para la imagen y otra
+                        para una descripción corta del héroe y un link para navegar hacia el sitio de 
+                        cada héroe
+                    -->
                     <header><h2>Mujer Maravilla</h2></header>
                     <figure class="image-wrapper">
                         <img src="Images/wonderwomanMain.jpg" width="100%">
@@ -143,7 +150,6 @@
                     <figure class="image-wrapper">
                         <img src="Images/greenarrowMain.jpg" width="100%">
                     </figure>
-                    <!-- https://www.artstation.com/artwork/yEWWK -->
                     <article class="hero-text">
                         <p> 
                             ¿Qué fue lo último que se llevó a casa de tus últimas vacaciones a la playa? ¿Un recuerdo 
@@ -159,6 +165,12 @@
             <div class="floating-button">
                 <a href=""><img src="Images/ic_keyboard_arrow_up_black_24dp_2x.png" width="56" alt="Ir arriba"></a>
             </div>
+            <!--Footer, donde aparece el nombre del autor de la página y de un link para navegar hacia el
+                Mapa del sitio
+            -->
+            <!--La descripción detallada de las páginas de los héroes solo se realiza en la página "batman.html" 
+                dado que las páginas de los otros héroes tienen la misma estructura
+            -->
 			<footer class="footer">
 				<p>2018 Sebastián González Franco</p>
 				<a href="mapa.html" class="gray">Mapa del sitio</a>

@@ -1,8 +1,11 @@
+/*En esta hoja se agregan los estilos para la página principal*/
 .heroes-container{
     margin: 0 10%;
 }
 
 .hero-container{
+    /*Se agregan los estilos para que los contenedores de cada héroes tenga el aspecto de una tarjeta, las
+    tarjetas ocupan un 47% del ancho de su contenedor padre (heroes-container)*/
     border-radius: 2pt;
     float: left;
     margin: 8px 3% 8px 0;
@@ -34,16 +37,20 @@
 }
 
 .hero-text p{
+    /*Se controla una altura mínima de 60px para que todas las tarjetas adquieran las misma altura*/
 	min-height: 60px;
 }
 
 .image-wrapper{
+    /*Se controla que el contenedor de imágenes de las imágenes tenga como máximo 250px y se ocultan por medio de 
+    overflow la parte de las imágenes que sobrepasen esta altura máxima de este contenedor*/
     margin: 0;
     max-height: 250px;
     overflow: hidden;
 }
 
 @media only screen and (max-width: 780px) {
+    /*Solo se presenta una tarjeta por columna*/
     .heroes-container{
         margin: 0;
         width: 100%;
