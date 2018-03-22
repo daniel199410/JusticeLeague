@@ -16,6 +16,10 @@
 	width: 33.333%;
 }
 
+.gallery figure img{
+	min-height: 208px;
+}
+
 .gallery-container{
 	width:70%;
 	margin: 0 auto;
@@ -67,4 +71,43 @@
 
 .skills ul li{
 	padding-bottom: 4px;
+}
+
+@media only screen and (max-width: 780px) {
+	.profile, .gallery-container{
+		width: 80%;
+	}	
+}
+
+@media only screen and (max-width: 480px) {
+	.gallery{
+		display: block;
+	}
+
+	.gallery figure{
+		margin-top: 0;
+		margin-bottom: 8px;
+		width: 100%;
+	}
+
+	.gallery-container{
+		width: 100%;
+	}
+
+	.gallery-container h2{
+		padding-left: 5%;
+	}
+	
+	.profile{
+		width: 95%;
+	}	
+
+	.profile-image, .main-data{
+		float: none;
+	}
+
+	.profile-image{
+		width: 40%;
+		margin: auto;
+	}
 }
